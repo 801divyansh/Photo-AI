@@ -3,10 +3,14 @@
   "compilerOptions": {
     "plugins": [
       {
-        "name": "next"
+        "name": "next",
       }
-    ]
-  },
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+},
   "include": [
     "**/*.ts",
     "**/*.tsx",
