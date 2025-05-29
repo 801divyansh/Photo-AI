@@ -11,6 +11,7 @@ import { PricingSection } from "./PricingSection"
 import { ArrowRight, CheckCircle, Sparkles ,Clock} from "lucide-react"
 import { SignInButton, SignedOut } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button"
+import { ScrollIndicator } from "./ScrollIndicator";
 
 
 
@@ -20,7 +21,7 @@ export function Hero(){
             <div className="relative min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops)] from-purple-900 via-gray-900 to-black text-white overflow-hidden">
                 <BackGroundEffects />
 
-                <div className="relative min-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 mt-10">
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 mt-10">
                     <HeroHeader />
 
                     <motion.div
@@ -115,10 +116,9 @@ export function Hero(){
                                 </div>
                             </div>
                         </motion.section>
-
-                       
                     </motion.div>
                 </div>
+                <ScrollIndicator />
             </div>
         </div>
     );

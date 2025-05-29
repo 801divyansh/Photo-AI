@@ -2,7 +2,6 @@ import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@clerk/nextjs";
-import { useRouter } from "next/navigation";
 import { BACKEND_URL } from "@/app/config";
 import { RazorpayResponse } from "@/types";
 

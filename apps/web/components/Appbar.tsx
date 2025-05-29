@@ -9,7 +9,7 @@ import { ThemeToggle } from "./ThemeToggle";
 
 export function Appbar() {
   return (
-    <div>
+    <div className="bg-black">
       <motion.header
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

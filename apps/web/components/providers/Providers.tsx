@@ -9,7 +9,7 @@ interface ProvidersProps {
     children: React.ReactNode;
 }
 
-export function Providers({children}: ProviderProps) {
+export function Providers({children}: ProvidersProps) {
     return (
         <ClerkProvider appearance={{ layout: { logoPlacement: "inside" }, baseTheme: dark }}>
             <ThemeProvider
@@ -19,7 +19,7 @@ export function Providers({children}: ProviderProps) {
                 disableTransitionOnChange
             >
                 {children}
-                <Toaster position="bottom-right" />
+                <Toaster position="bottom-right"/>
             </ThemeProvider>
         </ClerkProvider>
   );

@@ -1,8 +1,8 @@
 
-import { PackCard, TPack } from "./PackCard";
 import { BACKEND_URL } from "@/app/config";
 import axios from "axios";
 import { PacksClient } from "./PacksClient";
+import { TPack } from "./PackCard";
 
 
 async function getPacks(): Promise<TPack[]> {
